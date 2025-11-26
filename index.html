@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ziad – Portfolio</title>
+  <title>Ziad - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     /* BASIC RESET */
@@ -14,7 +14,7 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f4f4f4;
       color: #222;
       line-height: 1.6;
     }
@@ -29,24 +29,23 @@
     }
 
     /* LAYOUT */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 1rem;
-    }
-
     header {
       background-color: #ffffff;
       border-bottom: 1px solid #ddd;
     }
 
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
     header .container {
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
 
     .logo {
@@ -57,9 +56,8 @@
     nav ul {
       list-style: none;
       display: flex;
-      flex-wrap: wrap;
       gap: 0.8rem;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     nav a {
@@ -76,18 +74,31 @@
     }
 
     section {
-      margin-bottom: 2rem;
       background-color: #ffffff;
       border: 1px solid #e0e0e0;
       border-radius: 4px;
       padding: 1.25rem;
+      margin-bottom: 1.25rem;
     }
 
     section h2 {
+      font-size: 1.25rem;
       margin-bottom: 0.75rem;
-      font-size: 1.3rem;
       border-bottom: 1px solid #e0e0e0;
       padding-bottom: 0.25rem;
+    }
+
+    /* INTRO */
+    .intro-name {
+      font-size: 1.7rem;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    .intro-role {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.75rem;
     }
 
     p {
@@ -95,37 +106,16 @@
       font-size: 0.95rem;
     }
 
-    /* HERO / INTRO */
-    .hero-name {
-      font-size: 1.7rem;
-      font-weight: bold;
-      margin-bottom: 0.25rem;
-    }
-
-    .hero-role {
-      font-size: 1rem;
-      color: #555;
-      margin-bottom: 0.75rem;
-    }
-
-    .hero-list {
-      list-style: disc;
-      margin-left: 1.1rem;
+    ul {
+      margin-left: 1.2rem;
+      margin-bottom: 0.7rem;
       font-size: 0.95rem;
     }
 
-    /* LIST STYLES */
-    .list-clean {
-      list-style: none;
-      padding-left: 0;
+    li {
+      margin-bottom: 0.3rem;
     }
 
-    .list-clean li {
-      margin-bottom: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    /* EXPERIENCE / PROJECT BLOCKS */
     .item {
       margin-bottom: 1rem;
     }
@@ -140,26 +130,20 @@
       margin-bottom: 0.3rem;
     }
 
-    .item p {
-      margin-bottom: 0.4rem;
-    }
-
-    /* CONTACT */
     .contact-detail {
       margin-bottom: 0.4rem;
       font-size: 0.95rem;
     }
 
     footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1rem 0;
+      color: #666;
       border-top: 1px solid #ddd;
       background-color: #ffffff;
-      padding: 0.8rem 0;
-      font-size: 0.85rem;
-      text-align: center;
-      color: #666;
     }
 
-    /* RESPONSIVE */
     @media (max-width: 600px) {
       header .container {
         flex-direction: column;
@@ -181,8 +165,7 @@
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -193,74 +176,53 @@
   <!-- MAIN CONTENT -->
   <main class="container">
 
-    <!-- INTRO / HERO -->
+    <!-- INTRO -->
     <section id="intro">
-      <div class="hero-name">Ziad</div>
-      <div class="hero-role">Student & Aspiring Software Engineer</div>
+      <div class="intro-name">Ziad</div>
+      <div class="intro-role">Student & Aspiring Software Engineer</div>
       <p>
-        I enjoy solving problems with code, learning new concepts, and pushing myself through discipline and consistency.
+        I enjoy solving problems with code, understanding how businesses work, and building strong habits through discipline.
       </p>
-      <ul class="hero-list">
+      <ul>
         <li>Solved <strong>13 Project Euler problems</strong>.</li>
         <li>Trained in <strong>MMA for 8 years</strong>.</li>
         <li>Completed a <strong>FinTech internship at STC</strong>.</li>
+        <li>Achieved <strong>high grades in my GCSEs</strong>.</li>
       </ul>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
-      <h2>About</h2>
+      <h2>About Me</h2>
       <p>
-        I’m Ziad, a student who enjoys combining logical thinking with hard work. I like
+        I’m Ziad, a student who likes combining logical thinking with consistent hard work. I enjoy
         breaking down difficult problems into smaller steps and solving them carefully.
       </p>
       <p>
-        On the technical side, I work on programming challenges like Project Euler and
-        small coding projects to keep improving my skills. On the personal side, I’ve been
-        training in MMA for 8 years, which taught me discipline, resilience, and how to stay
-        calm under pressure.
-      </p>
-      <p>
-        I also completed a FinTech internship at STC, where I got exposure to how real products
-        are built and managed in a professional environment.
+        Outside of academics and coding, I’ve trained in MMA for 8 years. This has taught me discipline,
+        resilience, and how to stay calm under pressure — qualities that help me in both school and programming.
       </p>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="list-clean">
-        <li><strong>Programming:</strong> Python, Java, basic HTML & CSS</li>
-        <li><strong>Problem Solving:</strong> Algorithms, Project Euler challenges, logical thinking</li>
-        <li><strong>Tools:</strong> Git, GitHub, basic command line</li>
-        <li><strong>Personal:</strong> Discipline, consistency, focus under pressure, willingness to learn</li>
-      </ul>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <!-- EDUCATION & ACHIEVEMENTS -->
+    <section id="education">
+      <h2>Education & Achievements</h2>
 
       <div class="item">
-        <div class="item-title">Project Euler Progress</div>
-        <div class="item-sub">Algorithms & Maths</div>
+        <div class="item-title">GCSEs</div>
+        <div class="item-sub">High Grades</div>
         <p>
-          I’ve solved <strong>13 Project Euler problems</strong> so far. This helps me practise
-          mathematical thinking, writing efficient code, and finding patterns in numbers.
+          I achieved <strong>high grades in my GCSEs</strong>, which reflects my effort, consistency,
+          and ability to handle a demanding workload across multiple subjects.
         </p>
-        <p>
-          <em>Tech used:</em> Python (mainly), sometimes Java.
-        </p>
-        <!-- Optional: add a GitHub link when you have it -->
-        <!-- <p><a href="https://github.com/your-username" target="_blank">View solutions on GitHub</a></p> -->
       </div>
 
       <div class="item">
-        <div class="item-title">Personal Portfolio Website</div>
-        <div class="item-sub">HTML & CSS</div>
+        <div class="item-title">Project Euler</div>
+        <div class="item-sub">Problem Solving & Algorithms</div>
         <p>
-          This website itself is a simple project built with basic HTML and CSS. The goal is to
-          clearly present who I am, my skills, and my experience in a clean and readable way.
+          I have solved <strong>13 Project Euler problems</strong>. Working on these challenges helps me improve
+          my mathematical thinking, algorithm design, and writing efficient code.
         </p>
       </div>
     </section>
@@ -270,21 +232,26 @@
       <h2>Experience</h2>
 
       <div class="item">
-        <div class="item-title">FinTech Intern – STC</div>
+        <div class="item-title">FinTech Internship – STC</div>
         <div class="item-sub">Internship · STC</div>
         <p>
-          Completed an internship at STC in a FinTech environment. I observed how teams work,
-          how digital products are managed, and how technology supports financial services.
+          During my internship at <strong>STC</strong>, I was introduced to how a FinTech business operates.
+          I learned my way around the company, how different teams work together, and how daily operations are run.
+        </p>
+        <p>
+          I was also exposed to <strong>cyber security</strong> concepts and saw how important it is to keep systems
+          and data secure. In addition, I learned about how <strong>data is extracted and turned into useful information</strong>
+          for the business — from raw data to insights that help with decisions and performance.
         </p>
       </div>
 
       <div class="item">
         <div class="item-title">MMA Training</div>
-        <div class="item-sub">8 years</div>
+        <div class="item-sub">8 Years</div>
         <p>
-          I have trained in MMA for <strong>8 years</strong>. This has built my discipline,
-          consistency, and mental toughness. These habits transfer directly into how I study,
-          how I approach coding tasks, and how I handle difficult problems.
+          I have trained in <strong>MMA for 8 years</strong>. This experience has built my discipline, focus,
+          and ability to stay consistent over a long period of time. It also helps me handle pressure and keep
+          a clear mind when facing difficult tasks.
         </p>
       </div>
     </section>
@@ -293,21 +260,21 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        If you’d like to talk about internships, projects, or learning in tech, feel free to reach out.
+        If you’d like to reach out about internships, projects, or general opportunities, you can contact me here:
       </p>
       <div class="contact-detail">
         <strong>Email:</strong>
-        <!-- replace with your real email -->
+        <!-- Replace with your real email -->
         <a href="mailto:youremail@example.com">youremail@example.com</a>
       </div>
       <div class="contact-detail">
         <strong>GitHub:</strong>
-        <!-- replace with your GitHub profile -->
+        <!-- Replace with your GitHub -->
         <a href="https://github.com/your-username" target="_blank">github.com/your-username</a>
       </div>
       <div class="contact-detail">
         <strong>LinkedIn:</strong>
-        <!-- replace with your LinkedIn profile -->
+        <!-- Replace with your LinkedIn -->
         <a href="https://www.linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a>
       </div>
     </section>
@@ -316,13 +283,8 @@
 
   <!-- FOOTER -->
   <footer>
-    © <span id="year"></span> Ziad. All rights reserved.
+    © Ziad
   </footer>
-
-  <script>
-    // Set current year in footer (optional – you can delete this whole script if you want pure HTML)
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 
 </body>
 </html>
